@@ -1,0 +1,19 @@
+Diversi Script Open
+'File types and user notes at https://seoautopilotcoupon.com/
+'Link folder script
+'Ask for folder location
+  usetext display screen centre (box.shrink to fit)
+  usetext text type  = (fileloc)
+    display (usetext AS prompt) = "Open link diagram file location"
+    file open (usetext) type = linktree
+    'linktree is a custom file type check
+    firstline = fetch (linefetch.activefile 1,1)
+    errorcheck = string$(1).firstline
+    if errorcheck = "www.seoautopilotcoupon.com Verified Link Diagram File"
+      Open (screenvis, centrescreen)
+        Else
+        usetextreplace diusplay screen centre( box.shrink to fit)
+        "Incorrect file type"
+        Close file
+   Usetext.close
+   Diversi.close
